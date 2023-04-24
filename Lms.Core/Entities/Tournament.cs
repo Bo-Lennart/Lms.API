@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Lms.Core.Entities
 {
-    internal class Tournament
+    public class Tournament
     {
+        public int Id { get; set; }
+        public string Title { get; set; }
+        public DateTime StartDate { get; set; }
+        public ICollection<Game> Games { get; set; }
     }
 }
